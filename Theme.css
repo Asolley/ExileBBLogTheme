@@ -1,0 +1,1518 @@
+/**
+* BF4 Battlelog HELIX Theme edited by Asolley to Exile Colors/Logo
+* This theme is heavliy inspired by DaniluK4000's "Night Theme"
+*
+* @author badjokr
+* @version 4.29
+* @date 10.06.2018
+* @license GPL v3
+* @link http://badjokr.com
+* @link http://battlelog.battlefield.com/bf4/user/badjokr/
+* @link https://getbblog.com/en/user/profile/148681/badjokr/
+* @link https://www.twitch.tv/badjokr/
+* @link https://www.twitter.com/badjokr/
+* Accounted hours working on this style: 70hours+
+*/
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+::-webkit-scrollbar-track {
+	background: #00f7ff;
+}
+::-webkit-scrollbar-thumb {
+	background: #00f7ff;
+    min-height: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #0017FF;
+}
+::-webkit-scrollbar-thumb:active {
+	background: #0017FF;
+}
+::-webkit-scrollbar-corner {
+	background: #00f7ff;
+}
+::selection {
+  background: rgba(0, 247, 255, 0.50); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgba(0, 247, 255, 0.50); /* Gecko Browsers */
+}
+body {
+	background-color: black;
+}
+#footer-wrapper {
+    visibility: hidden !important;
+    display: block !important;
+}
+table.table.table-hover.servers-list {
+    margin-bottom: 0px !important;
+}
+#serverbrowser-show footer {
+    border-radius: 0 0 10px 2px !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    transition: .2s;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+#serverbrowser-show footer:hover {
+    background-color: rgba(7, 125, 189, 0.4) !important;
+    border: 1px solid #d5dde5 !important;
+    text-shadow: 0 0 0.5em rgba(255, 255, 255, 0.8) !important;
+}
+#base-container{
+    border-radius: 0 0 20px 20px !important;
+    background: rgba(41, 44, 48, 0.4) none repeat scroll 0% 0%;
+    border-left: 1px solid rgba(255,255,255,0.05);
+    border-right: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    width: 992px !important;
+    padding: 10px;
+}
+body.is-loggedin>#base-header>.game-bar>.inner-wrapper {
+    border-top: 0px transparent !important;
+    height: 47px;
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%) !important;
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%) !important;
+}
+html>body.premium>#base-header>.game-bar>.grid-container {
+    padding: 0 10px !important;
+    box-sizing: border-box !important;
+    width: 1012px !important;
+    border-left: 1px solid rgb(27, 37, 46);
+    border-right: 1px solid rgb(27, 37, 46);
+}
+body.premium #base-header .grid-container.premium-bg {
+    background: url(https://imgur.com/tDdhAQx.png) no-repeat rgba(0,0,0,0.9) !important;
+    width: 100% !important;
+}
+body.premium .main-header .persona {
+  background: url(https://i.imgur.com/tDdhAQx.png) no-repeat top center; }
+
+body.premium #base-header .grid-container.premium-bg > div:first-child, body.premium #base-header .grid-container.premium-bg > section:last-child {
+    margin: 0 10px;
+}
+.submenu > ul > li.active > a, .submenu > ul > li.active > span, .submenu > ul > li.active > a:hover, .submenu > ul > li.active > a:active {
+    box-shadow: 0px 0px 7px 2px rgb(0, 247, 255) !important;
+    border-radius: 2px;
+}
+
+body.show-section-select #community-bar .dropdown-bar {
+    height: 190px !important;
+    background: transparent !important;
+}
+#community-bar .dropdown-bar {
+    background: transparent !important;
+}
+
+.btn.btn-primary, a.btn.btn-primary {
+    background: rgba(0, 23, 255, 0.8) !important;
+	color: #00f7ff;
+    border: 1px solid transparent;
+    box-sizing: border-box !important;
+    transition: 0.3s !important;
+    border-width: 0.1px !important;
+    border-radius: 2px !important;
+}
+.btn.btn-primary:hover:not([disabled]):not(.disabled), a.btn.btn-primary:hover:not([disabled]):not(.disabled) {
+    border: 1px solid rgba(0, 247, 255, 0.5) !important;
+}
+.btn, a.btn {
+    box-sizing: border-box !important;
+    background: rgba(21, 23, 24, 0.5)!important;
+    background-color: rgba(38, 40, 45, 0.8) !important;
+    border-width: 0.1px !important;
+    border-radius: 2px !important;
+    box-sizing: border-box !important;
+    transition: 0.3s !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.btn:hover:not([disabled]):not(.disabled), a.btn:hover:not([disabled]):not(.disabled) {
+    border: 1px solid #d5dde5 !important;
+}
+.btn.btn-primary:hover:not([disabled]):not(.disabled), a.btn.btn-primary:hover:not([disabled]):not(.disabled) {
+      background-image: -webkit-linear-gradient(top, rgba(19, 19, 19, 0.6) 0%, rgba(70, 70, 70, 0.8) 100%);
+      background-image: linear-gradient(to bottom, rgba(19, 19, 19, 0.6) 0%, rgba(70, 70, 70, 0.8) 100%);
+      color: #fff;
+      text-shadow: 0 0 0.5em rgba(255, 191, 101, 0.8);
+      border-color: #fff; }
+button#feed-load-more {
+    border-radius: 0 0 15px 15px !important;
+    transition: .2s !important;
+    border: none !important;
+    background: transparent !important;
+}
+#feed-more-events>.box>footer {
+    border-radius: 0 0 15px 15px;
+    transition: .2s;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+#feed-more-events>.box>footer:hover {
+    background-color: rgba(7, 125, 189, 0.4) !important;
+    border: 1px solid #d5dde5 !important;
+}
+button#show-all-favorites, button#load-more-reports {
+    border-radius: 0 0 15px 15px !important;
+    transition: .2s !important;
+    border: none !important;
+    background: transparent !important;
+}
+#battlereports>.row>div>section>footer, #battlereports-details>.box>footer {
+    border-radius: 0 0 15px 15px;
+    transition: .2s;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+#battlereports>.row>div>section>footer:hover, #battlereports-details>.box>footer:hover {
+    background-color: rgba(7, 125, 189, 0.4) !important;
+    border: 1px solid #d5dde5 !important;
+}
+table.battlereports-table tr.active [class*='winstatus-'] {
+    color: #0017FF;
+}
+/*.header-dropdown-active #base-header .game-bar .dropdown-bar {
+    width: 1012px !important;
+    left: -11px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    background: rgba(0, 0, 0, 0.9) !important;
+    box-shadow: -1px 5px 20px 0px #0E3565 !important;
+}*/
+#base-header .game-bar .main-nav .base-section-menu > li:first-child {
+    border-left: 1px solid transparent !important;
+}
+.base-section-menu>li:last-child {
+    border-right: 1px solid transparent !important;
+}
+#base-header .game-bar .dropdown-bar {
+    width: 1012px !important;
+    left: -11px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    background: rgba(0, 0, 0, 0.9) !important;
+    box-shadow: -1px 5px 20px 0px #0E3565 !important;
+}
+#base-header .game-bar .inner-wrapper {
+    border-top: 0px solid transparent !important;
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%) !important;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%) !important;
+}
+#comcenter, #comcenter-friends {
+    background: #111517 !important;
+}
+.comcenter-chat-taskbar {
+    background: rgba(33, 35, 38, 0.8)!important;
+    transition: .3s;
+}
+.comcenter-chat-taskbar:hover {
+    background: rgba(42, 42, 42, 0.9)!important;
+}
+#comcenter-chats .comcenter-chat-taskbar-avatar .username {
+    color: #CCCCCC!important;
+}
+#comcenter-chats .comcenter-chat-taskbar-username {
+    color: #CCCCCC!important;
+}
+#comcenter-chats .comcenter-chat-content {
+    border: 1px solid #111517 !important;
+    background: #111517 !important;
+}
+#comcenter-chats .chat-header {
+    border-bottom: 1px solid #111517 !important;
+    background: #0B0D0E !important;
+    font-family: Arial;
+}
+#comcenter-chats .comcenter-chat-header, #comcenter-chats .comcenter-chat-group-header {
+    border-bottom: 1px solid #111517 !important;
+}
+#comcenter-chats .comcenter-chat-message {
+    border-top: 1px solid #313131 !important;
+}
+.chat-members {
+    background: #111517 !important;
+}
+.chat-member-close {
+    background: #0B0D0E !important;
+    border-top: 1px solid #111517 !important;
+}
+#comcenter-chats .comcenter-chat-input {
+    background: rgb(11, 13, 14) !important;
+    border: 1px solid rgb(11, 13, 14) !important;
+}
+#comcenter-chats .comcenter-chat-bottom-container {
+    border-top: 1px solid #111517 !important;
+    background: #0B0D0E !important;
+}
+.comcenter-chat-party-menu-dropdown {
+    background: #0B0D0E !important;
+    border: 1px solid #313131 !important;
+    border-top: 0px !important;
+}
+.comcenter-chat-party-menu-dropdown li {
+    border-top: 1px solid #313131 !important;
+}
+.comcenter-chat-party-menu-dropdown li:hover {
+    background: #313131 !important;
+}
+#base-header .game-bar .main-nav .base-section-menu > li:first-child > a.wfont {
+    border-radius: 15px 0 0 0 !important;
+}
+#base-header .game-bar .main-nav .base-section-menu > li:last-child > a.wfont {
+    border-radius: 0 15px 0 0 !important;
+}
+button.btn.btn-small.btn-clean.comcenter-chat-addmembers {
+    width: 100% !important;
+    margin: 8px 0 8px 0 !important;
+}
+.comcenter-settings {
+    border-top: none !important;
+    height: 48px !important;
+}
+#base-header .game-bar .main-nav .base-section-menu > li:not(.nav-home) > a:hover, #base-header .game-bar .main-nav .base-section-menu > li:not(.nav-home).focused > a {
+    background: #151718 none repeat scroll 0% 0%;
+    color: white;
+}
+#comcenter-friends #comcenter-tab-friends-content li {
+    transition: .1s;
+}
+html>body.is-loggedin>#viewport::before {
+    display: block;
+    font-family: Purista;
+    content: "Theme by Asolley" !important;
+    position: fixed;
+    width: auto;
+    font-size: 15px;
+    z-index: 1000;
+    text-transform: uppercase;
+    background: rgba(8, 13, 19, 0.7) none repeat scroll 0% 0% !important;
+    padding: 5px;
+    left: 27px;
+    transform: rotate(90deg);
+    top: 160px !important;
+    transform-origin: left top 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #ddd;
+    opacity: 0.6;
+    height: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px !important;
+    text-shadow: 0 0 3px #0017FF, 0 0 5px #0017FF;
+    transition: 5s;
+}
+html>body.is-loggedin>#viewport:hover::before{
+    opacity: 1;
+}
+#receipt-container {
+    width: 1011px !important;
+    left: -10px !important;
+}
+#serverbrowser-show button.btn-primary.bblog-red, #server-page-join-buttons .bblog-red {
+    color: #00f7ff !important;
+    border: 1px solid #0017FF !important;
+
+}
+
+#server-page-join-buttons {
+    padding: 8px !important;
+    background-color: transparent !important;
+}
+#community-bar .dropdown-bar .grid-container .row {
+    width: 1010px !important;
+}
+@media only screen and (min-width: 1780px){
+.alert.info {
+    text-shadow: 0px 0px 4px #000 !important;
+    background: rgba(0, 0, 0) none repeat scroll 0% 0% !important;
+    color: #0017FF;
+    border: 1px solid #0017FF !important;
+    padding: 5px !important;
+    position: fixed !important;
+    z-index: 1000 !important;
+    width: 305px !important;
+    bottom: 50px !important;
+    height: auto !important;
+    border-radius: 2px !important;
+    box-sizing: border-box !important;
+    left: 5px;
+}
+.sitenotification.grid-container>*>.alert.info.large {
+    bottom: 100px !important;
+}
+}
+#server-page .bblog-local-comment textarea {
+    width: 974px !important;
+}
+button.join-friend-generic-button.btn.btn-secondary.btn-large.pull-right {
+    background: rgba(0, 23, 255 0.8) !important;
+    border: 1px solid transparent;
+    box-sizing: border-box !important;
+    transition: 0.3s !important;
+    border-width: 0.1px !important;
+    border-radius: 2px !important;
+    color: #0017FF !important;
+}
+button.join-friend-generic-button.btn.btn-secondary.btn-large.pull-right:hover {
+    border: 1px solid rgba(0, 23, 255, 0.5) !important;
+    text-shadow: 0 0 0.5em rgba(0, 23, 255, 0.8) !important;
+}
+.right-column>div.bblog-local-comment>textarea {
+    max-width: 303px;
+}
+#club-wall-content>#clubwallloadmore>.submenu > ul > li > a {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    transition: .2s;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 2px 2px 10px 10px !important;
+}
+#club-wall-content>#clubwallloadmore>.submenu > ul > li > a:hover {
+    background: rgba(7, 125, 189, 0.4) !important;
+    border: 1px solid #d5dde5 !important;
+    background-image: none;
+}
+.submenu > ul > li > a{
+    transition: .2s;
+    border-radius: 2px;
+}
+#friendlist-header form input {
+    background: #0B0D0E !important;
+    border: 1px solid #2E2E2E !important;
+    color: #d5dde5 !important;
+}
+#friendlist-header form input:focus {
+    border-color: #888A8B !important;
+}
+.comcenter-chat-party-menu-icon {
+    position: absolute !important;
+    right: 2px !important;
+}
+.latest-stories>footer {
+    border-radius: 0 0 15px 15px;
+    transition: .2s;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+.latest-stories>footer:hover {
+    background-color: rgba(7, 125, 189, 0.4) !important;
+    border: 1px solid #d5dde5 !important;
+}
+.latest-stories>footer>* {
+    margin-left: 5px !important;
+}
+#friendlist-header .icon-search {
+    top: 15px !important;
+}
+section.profile-overview.row.spacing-top>.right-column>*>.clubs-list>.box:last-child>div {
+    border-radius: 2px 2px 10px 10px !important;
+}
+section.profile-overview.row.spacing-top>.right-column>*>.clubs-list>.box:first-child>div {
+    border-radius: 0 0 2px 2px;
+}
+section.profile-overview.row.spacing-top>.right-column>*>.clubs-list>.box>div {
+    border-radius: 2px;
+}
+section.profile-overview.row.spacing-top>.right-column>#soldiers>header, 
+section.profile-overview.row.spacing-top>.right-column>.margin-bottom>.box>header, 
+section.profile-overview.row.spacing-top>.right-column>.friends.box>header, 
+.presentation>header{
+    border-radius: 10px 10px 0 0 !important;
+}
+#soldiers>.soldier-data-container:only-of-type>article {
+    border-radius: 2px 2px 10px 10px !important;
+}
+#soldiers>.soldier-data-container:last-of-type>article {
+    border-radius: 2px 2px 10px 10px !important;
+}
+#emblem-edit .editor-row .editor-col.emblem-layers {
+    width: 142px !important;
+}
+.ace_scrollbar-h {
+	height: 6px !important;
+}
+.receipt.checkbox {
+	background: rgba(110, 185, 0, 0.9);
+}
+#base-bf4-html .video-container {
+	display: none;
+}
+#game-stats-head .soldier-info-name span.premium {
+    color: #00f7ff;
+}
+.progress-bar.difference {
+	background-image: -o-linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 24%, #484848 25%, black);
+	background-image: -moz-linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 24%, #484848 25%, black);
+	background-image: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 24%, #484848 25%, black);
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 24%, #484848 25%, black);
+}
+#base-bf4-html #base-background {
+    background: url(https://imgur.com/ssZt42S.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#base-bf4-html .box > header:not(.bblog-bf4-filter-btn),
+#base-bf4-html table.table > thead tr th,
+#base-bf4-html .submenu>ul>li.active>a,
+#base-bf4-html .submenu>ul>li.active>span,
+#base-bf4-html .submenu>ul>li.active>a:hover,
+#base-bf4-html .submenu>ul>li.active>a:active,
+#base-bf4-html .forum-start-border .common-box-title .forum-start-forum-headercell,
+#base-bf4-html #loadout .loadout-item-container.active header,
+#base-bf4-html #base-header .game-bar .main-nav .base-section-menu>li.active:not(.nav-home)>a,
+#base-bf4-html #base-header .game-bar .main-nav .base-section-menu>li.active:not(.nav-home)>a:hover,
+#base-bf4-html #base-header .game-bar .main-nav .base-section-menu>li.active:not(.nav-home).focused>a,
+#base-bf4-html .dialog header,
+#base-bf4-html .pagination-paginationbutton.pagination-type-on .pagination-paginationbutton-inner {
+	background: #0017FF;
+	color: white;
+	box-shadow: none;
+	text-shadow: black 0px 0px 3px;
+	background-image: linear-gradient(to bottom, rgba(0, 23, 255, 0.81) 0%, rgba(0, 23, 255, 0.8) 100%) !important;
+}
+.forum-start-container .forum-sidebar-search-form-input {
+    margin-right: 1px !important;
+    border-radius: 2px !important;
+}
+#base-bf4-html .box > header h1 {
+	color: white;
+	text-shadow: black 0px 0px 3px;
+}
+#serverbrowser-page-info>.box-collection>#server-page-info>.row-tight>div.box.span1>header>h1 {
+    background-image: linear-gradient(to bottom, rgba(0, 247, 255, 0.81) 0%, rgba(0, 247, 255, 0.8) 100%) !important;
+}
+#serverbrowser-page-info>.box-collection>#server-page-info>.row-tight>div.box.span1>header {
+    padding: 0 0 200px 0 !important;
+}
+#base-bf4-html #overview-info #overview-info-list li,
+#base-bf4-html .main-header .tiles,
+#base-bf4-html .forum-start-border .forum-start-forum-title,
+#base-bf4-html .forum-start-border .forum-start-forum-bodycell,
+#base-bf4-html #bblog-options {
+	background: rgba(0, 0, 0, 0.4);
+}
+#overview-info .overview-skillcontainer:hover #overview-info-list li, #overview-info .overview-skillcontainer:hover #overview-skill .box-content {
+    background-color: rgba(7, 7, 7, 0.6)!important;
+}
+#base-bf4-html .warsaw-stats-content table.profile-stats-table td,
+#base-bf4-html table.table th {
+	background: rgba(0, 0, 0, 0.7) padding-box;
+	background-clip: padding-box;
+}
+#base-bf4-html .box-content {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+#loadout #items-select-menu .items-select-item .item-select-configure {
+    margin: 0 0 1px 0px !important;
+}
+#loadout #items-select-menu .items-select-item .item-info-icon-container {
+    margin: 0px !important;
+}
+#game-stats>.game-stats-content>div>#overview-completion>.box>div.box-content {
+    border-radius: 0 0 10px 10px;
+}
+/*body #base-container #user .profile-info {
+    border-radius: 10px 10px 2px 2px !important;
+    overflow: hidden !important;
+}*/
+body #base-container #user .profile-info.premium .box.username {
+    background-image: url(https://imgur.com/tDdhAQx.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #00f7ff; }
+#profile-friends>section.box>header {
+    border-radius: 2px 2px 0 0;
+}
+#profile-friends>section.box>#friend-list>*:last-of-type>.friend {
+    border-radius: 0 0 10px 10px;
+}
+section#clubs>div.row>div.club-index>div.span12>div.box>header {
+    border-radius: 2px 2px 0 0 !important;
+}
+.club-index>div.span12>div.row.margin-top>div.span12>div.box>header {
+    border-radius: 2px 2px 0 0 !important;
+}
+.club-index>div.span12>div.row.margin-top>div.span12>div.clubs-list>div.box:last-of-type {
+    border-radius: 0 0 10px 10px !important;
+    overflow: hidden !important;
+}
+#clubs .emblembox {
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+.emblembox>.box-content>img {
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+#base-bf4-html h1.primary, #base-container .content>section>header h1 {
+    color: #00f7ff !important;
+    background: rgba(0, 0, 0, 0) !important;
+    text-shadow: black 0px 0px 3px;
+    padding-bottom: 2px;
+}
+.forum-start-container>.forum-start-title>.thread-title:before {
+    background: rgba(7, 7, 7, 0.6) !important;
+}
+#base-container .content > section > header h1.wrappable:before, .forum-start-title h1:before, .forum-page-title h1:before, .missions-details .header h1.wrappable:before, .devblog .header h1:before {
+    background: rgba(0, 0, 0, 0) !important;
+}
+#base-bf4-html footer,
+#base-bf4-html #footer-links li a,
+#base-bf4-html #footer-highlighted .footer-box-header,
+#base-bf4-html #footer-allrightsreserved,
+#base-bf4-html .forum-start-forum-headercell p,
+#base-bf4-html #loadout .loadout-item-container.active header h1,
+#base-bf4-html .warsaw-stats-content table.profile-stats-table tbody tr.active p,
+#base-bf4-html .weapon-stats-list li.active p,
+#base-bf4-html .weapon-stats-list li.active.locked p {
+	color: white;
+}
+#base-bf4-html .forum-threadview-post-ea:after,
+#base-bf4-html .forum-start-forum-has-official:after {
+	background: #8BD210;
+}
+#base-bf4-html .dialog header h3 {
+	color: white;
+	text-align: left;
+	padding-left: 15px;
+}
+#base-bf4-html a.preorder .box-content,
+#base-bf4-html h1.box-content {
+	background-color: transparent;
+}
+#base-bf4-html table.table tbody tr.active,
+#base-bf4-html:not(.is-touch) #serverbrowser .servers-list tbody .server-row.active {
+	box-shadow: none;
+	-webkit-filter: none;
+	-moz-filter: none;
+	filter: none;
+}
+#base-bf4-html table.table tbody tr.active td {
+	background: rgba(0, 0, 0, 0.8) padding-box;
+	color: #00CEFF;
+	box-shadow: none;
+    border-color: transparent;
+}
+#base-bf4-html .forum-threadview-post .forum-threadview-post-poster {
+	background: rgba(0, 0, 0, 0.3);
+}
+#base-bf4-html .forum-threadview-post .forum-threadview-post-content {
+	background: rgba(0, 0, 0, 0.7);
+}
+#base-bf4-html .forum-threadview-post .forum-threadview-post-content blockquote {
+	border: none;
+	background: rgba(0, 0, 0, 0.7);
+	color: white;
+	font-size: 12px;
+	line-height: 15px;
+	font-family: arial;
+}
+#base-bf4-html .weapon.smallinv {
+	background-image: url(http://eaassets-a.akamaihd.net/bl-cdn/cdnprefix/906d03b6a8ffbd2bcc9fb923e528b492f10a8608/public/profile/warsaw/gamedata/weapon/small.png);
+}
+#base-bf4-html .weaponaccessory.smallinv {
+	background-image: url(http://eaassets-a.akamaihd.net/bl-cdn/cdnprefix/906d03b6a8ffbd2bcc9fb923e528b492f10a8608/public/profile/warsaw/gamedata/weaponaccessory/small.png);
+}
+#base-bf4-html .vehicle.mediuminv {
+	background-image: url(http://eaassets-a.akamaihd.net/bl-cdn/cdnprefix/906d03b6a8ffbd2bcc9fb923e528b492f10a8608/public/profile/warsaw/gamedata/vehicle/medium.png);
+}
+#base-bf4-html .vehicleunlock.mediuminv {
+	background-image: url(http://eaassets-a.akamaihd.net/bl-cdn/cdnprefix/906d03b6a8ffbd2bcc9fb923e528b492f10a8608/public/profile/warsaw/gamedata/vehicleunlock/medium.png);
+}
+#base-bf4-html .kititem.largersmallinv {
+	background-image: url(http://eaassets-a.akamaihd.net/bl-cdn/cdnprefix/906d03b6a8ffbd2bcc9fb923e528b492f10a8608/public/profile/warsaw/gamedata/kititem/largersmall.png);
+}
+#base-bf4-html .battlereports-table .winstatus-1 {
+	color: #bcff66;
+}
+#base-bf4-html .battlereports-table .winstatus-2 {
+	color: #ff6666;
+}
+#base-bf4-html .overview-top-box .top-item,
+#base-bf4-html #overview-completion ul li,
+#base-bf4-html #vehicle-list .box-content,
+#base-bf4-html #weapon-list .box-content,
+#base-bf4-html #awards-statistics .stat-box .box-content,
+#base-bf4-html #assignments-statistics .stat-box .box-content {
+	background: transparent;
+}
+#base-bf4-html .weapon-stats-list li,
+#base-bf4-html .vehicle-stats-list li,
+#base-bf4-html .kits-list li,
+#base-bf4-html .awards-list li .award-medal,
+#base-bf4-html .awards-list li .award-ribbon,
+#base-bf4-html .stat-list-col>li {
+	background: rgba(0, 0, 0, 0.3);
+}
+#base-bf4-html #main-header .box-content {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+#base-bf4-html .weapon-stats-list li.active,
+#base-bf4-html .weapon-stats-list li.active.locked,
+#base-bf4-html .vehicle-stats-list li.active,
+#base-bf4-html .vehicle-stats-list li.active.locked,
+#base-bf4-html .kits-list li.active,
+#base-bf4-html .kits-list li.active.locked,
+#base-bf4-html .stat-list-col>li.active,
+#base-bf4-html #emblem-select .emblems-list li.active a {
+	background: rgba(0, 0, 0, 0.7);
+	color: white;
+	box-shadow: none;
+}
+#emblem-select .emblems-list li.selected-emblem:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: #0017FF; 
+}
+#base-bf4-html .warsaw-stats-content .profile-statistics-container .locked .image {
+	opacity: 1;
+}
+#base-bf4-html .active .icon-platform.pc {
+	background-position: 0px -10px;
+}
+#base-bf4-html #warsaw-stats-head .user a.profile-link {
+	text-shadow: black 1px 1px 2px;
+}
+#game-stats-head .user .common-gameicon-hori, #game-stats-head .user a.profile-link {
+    background: rgba(0, 0, 0, 0);
+}
+.club-link{
+	background: rgba(255, 255, 255, 0);
+}
+#base-bf4-html #warsaw-stats-head .user .icon-premium-wide {
+	position: relative;
+	top: 3px;
+}
+#base-bf4-html #warsaw-stats-head .soldier-info-name span.premium {
+	color: white;
+}
+#base-bf4-html .dialog>header .icon-close {
+	background-color: white;
+	border-radius: 3px;
+}
+#base-bf4-html body.premium .main-header .persona .icon-premium-wide {
+	margin-left: 4px;
+}
+body.premium .main-header .persona {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.progress-bar {
+	background-color: transparent !important;
+	border: 1px solid #0060fe;
+}
+.progress-bar .progress-bar-inner.warning:before {
+	background: -webkit-linear-gradient(to right, #0060fe, rgba(0, 0, 0, 0.1));
+	background: -moz-linear-gradient(to right, #0060fe, rgba(0, 0, 0, 0.1));
+	background: -o-linear-gradient(to right, #0060fe, rgba(0, 0, 0, 0.1));
+	background: linear-gradient(to right, #0060fe, rgba(0, 0, 0, 0.1));
+	box-shadow: 0 0 0.2em 1px #0060fe inset;
+}
+.progress-bar .progress-bar-inner.warning {
+	background-color: #0060fe;
+	box-shadow: 0 0 0.2em 1px #0060fe inset; 
+}
+.progress-bar .progress-bar-inner.warning[style="width:100%"] {
+	background: #0060fe;
+	box-shadow: 0 0 0.2em 1px #0060fe inset;
+}
+body #base-container #user .profile-playing {
+    background-color: rgba(7, 125, 189, 0.4) !important;
+    background: rgba(7, 125, 189, 0.4) !important;
+    border-radius: 2px;
+}
+body #base-container #user #soldiers .soldier-data-container.premium {
+  background-image: url(https://imgur.com/tDdhAQx.png);
+  background-position: top center;
+  background-repeat: no-repeat; }
+
+.ui-select {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 12px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.ui-select select {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	position: absolute;
+	left: -99999px;
+}
+.ui-select .options:hover,
+.ui-select.show-dropdown .options {
+	color: #fff;
+	border-color: #fff;
+}
+.ui-select .options:hover:after,
+.ui-select.show-dropdown .options:after {
+	border-top-color: #fff;
+}
+.ui-select .options {
+	display: block;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 1px solid rgba(250, 246, 246, 0.6);
+	color: #d5dde5;
+	line-height: 26px;
+	padding-left: 8px;
+	padding-right: 31px;
+	margin: 0;
+	cursor: pointer;
+	margin-top: -3px;
+	margin-bottom: -3px;
+	min-height: 26px;
+}
+.ui-select .options .option {
+	display: none;
+}
+.ui-select .options .option.selected {
+	display: block;
+}
+.ui-select .options:after {
+	content: "";
+	border: 4px solid transparent;
+	border-top-color: #d5dde5;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 11px;
+	right: 8px;
+}
+.emblem-layers>.sharing-options>.ui-select.show-dropdown .dropdown {
+    display: block;
+    width: 140px !important;
+}
+.ui-select .dropdown {
+	display: none;
+	border: 1px solid #d5dde5;
+	position: absolute;
+	top: 100%;
+	margin-top: -1px;
+	z-index: 100;
+	background-color: rgba(10, 14, 20, 0.85);
+	max-height: 320px;
+}
+.ui-select .dropdown li {
+	height: 34px;
+	line-height: 34px;
+	padding: 0 16px;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #fff;
+}
+.ui-select .dropdown li:not(.selected):hover {
+	background-color: rgba(100, 100, 100, 0.6);
+}
+.ui-select .dropdown li.selected {
+	background: #fff;
+	color: #000;
+}
+.ui-select .dropdown .jspVerticalBar {
+	right: 0px;
+}
+.ui-select .dropdown.jspScrollable li {
+	width: auto;
+	margin-right: -11px;
+}
+.sticky-scroll {
+	position: relative !important;
+}
+.sticky-scroll.fixed {
+	position: fixed !important;
+	float: none;
+	margin: 0;
+}
+.sticky-scroll.fixed-bottom {
+	position: absolute !important;
+	bottom: 0;
+	right: 0;
+}
+.switch {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 17px;
+}
+.switch input[type="checkbox"]:not(:checked),
+.switch input[type="checkbox"]:checked,
+.switch input[type="radio"]:not(:checked),
+.switch input[type="radio"]:checked {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+	border: 0;
+	background: none;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	z-index: 1;
+}
+.switch input[type="checkbox"] + div,
+.switch input[type="radio"] + div {
+	position: relative;
+	top: -2px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	height: 17px;
+	background: #3b3e43;
+	background-origin: border-box;
+	background-clip: border-box;
+	overflow: hidden;
+	transition-duration: 0.4s;
+	transition-property: padding, width, background-color;
+}
+.switch input[type="checkbox"] + div:before,
+.switch input[type="radio"] + div:before {
+	content: "";
+	display: block;
+	margin-left: 2px;
+	margin-top: 2px;
+	width: 18px;
+	height: 13px;
+	background: #fff;
+}
+.switch input[type="checkbox"]:checked + div,
+.switch input[type="radio"]:checked + div {
+	padding-left: 17px;
+	width: 23px;
+	background: #7dbe56;
+}
+.switch input[type="checkbox"]:active + div:before,
+.switch input[type="radio"]:active + div:before {
+	background-color: #fff;
+}
+.switch input[type="checkbox"]:focus + div,
+.switch input[type="radio"]:focus + div {
+	box-shadow: 0 0 2px yellow;
+}
+.switch + label {
+	position: relative;
+	top: 2px;
+}
+.scroll-container-outer {
+	position: relative;
+	height: 185px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.scroll-left,
+.scroll-right {
+	position: absolute;
+	top: 0;
+	line-height: 210px;
+	height: inherit;
+	font-size: 50px;
+	width: 45px;
+	text-align: center;
+	background-color: rgba(7, 7, 7, 0.5);
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	transition: opacity 0.1s ease-in-out;
+	-webkit-transition: opacity 0.1s ease-in-out;
+	-moz-transition: opacity 0.1s ease-in-out;
+	-ms-transition: opacity 0.1s ease-in-out;
+	-o-transition: opacity 0.1s ease-in-out;
+}
+.scroll-left:hover,
+.scroll-right:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.scroll-left.disabled,
+.scroll-right.disabled {
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	cursor: auto;
+}
+.scroll-left > figure,
+.scroll-right > figure {
+	width: 30px;
+	height: 59px;
+	background-image: url(http://eaassets-a.akamaihd.net/bl-cdn/cdnprefix/9b764b983931ba3a6435e21c2fd56eddc76b813a/public/ui/scroll-arrows.png);
+	margin-left: 1px;
+	display: inline-block;
+}
+.scroll-right > figure {
+	background-position: -30px 0px;
+}
+.scroll-left {
+	left: 0;
+}
+.scroll-right {
+	right: 0;
+}
+.scroll-container {
+	position: absolute;
+	top: 0;
+	left: 46px;
+	right: 46px;
+	height: inherit;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.scrollables {
+	float: left;
+	left: 0;
+}
+.scrollable {
+	float: left;
+	height: 174px;
+	width: 190px;
+	background-color: rgba(0, 0, 0, 0.5);
+	white-space: normal;
+	text-align: center;
+	margin-right: 1px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.scrollable.selected {
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 7px #fff;
+}
+.scrollable span {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#unopened-battlepacks .scrollable.selected span {
+	color: #1437BF;
+}
+.scrollable .title {
+	text-transform: uppercase;
+	display: block;
+}
+.scrollable.selected .title {
+	color: #000;
+}
+.scrollable .description {
+	font-size: 13px;
+	color: #8A8A8A;
+}
+.scroll-container .jspScrollable {
+	outline: none;;
+}
+.scroll-container .jspPane {
+	height: inherit;
+}
+.scroll-container .jspHorizontalBar {
+	height: 8px;
+	z-index: 2;
+}
+.scroll-container .jspTrack {
+	background: rgba(0, 0, 0, 0.5);
+}
+.scroll-container .jspDrag {
+	opacity: 0.75;
+}
+#unopened-battlepacks .scrollable {
+    transition-property: background, box-shadow;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+#unopened-battlepacks .scrollable span {
+    transition-property: color;
+    transition-delay: 0.2s;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+#unified-game-manager .unified-game-manager {
+	background: #111517 !important;
+    background-image: none !important;
+}
+#unified-game-manager #ugm-error {
+	background-image: none !important;
+    background: #D63729 !important;
+}
+#unified-game-manager .ugm-state .ugm-btn-group a.btn-clean:before,
+#unified-game-manager .ugm-state .ugm-btn-group a.btn-clean:after {
+	background-image: transparent;
+}
+#unified-game-manager .ugm-state .ugm-btn-group a.btn-clean:hover:not(.disabled),
+#unified-game-manager .ugm-state .ugm-btn-group a.btn-clean:active:not(.disabled) {
+	background-color: #B31111;
+}
+#unified-game-manager .ugm-state .ugm-btn-group a.btn-clean.active {
+	background-color: #B31111;
+}
+#unified-game-manager {
+    color: #FFF;
+}
+#unified-game-manager #ugm-error .ugm-message {
+    max-width: 760px;
+}
+#unified-game-manager .ugm-state .ugm-btn-group .btn-close {
+    background: url('http://eaassets-a.akamaihd.net/bl-cdn/cdnprefix/7f17c57b92b27f30a417d90a287452ffe28dba2c/public/unifiedgamemanager/close.png') no-repeat center center !important;
+    border: none !important;
+}
+#unified-game-manager .ugm-state .ugm-btn-group .btn-close:hover {
+    border: none !important;
+}
+#unified-game-manager .ugm-state .ugm-btn-group a.btn-clean {
+    height: 48px !important;
+}
+.dialog {
+	box-shadow: 0 0 40px 0 #00f7ff;
+	border: none;
+}
+.dialog > header {
+	border-bottom: 1px solid #00f7ff;
+}
+.progress-bar.home {
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 24%, transparent 25%, transparent);
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 24%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.05));
+}
+.progress-bar.away {
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 24%, transparent 25%, transparent);
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 24%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.05));
+}
+.game-stats-content table.profile-stats-table tbody tr.active p {
+	color: #00CEFF;
+}
+.btn:active:not([disabled]):not(.disabled),
+.btn.active:not([disabled]):not(.disabled),
+a.btn:active:not([disabled]):not(.disabled),
+a.btn.active:not([disabled]):not(.disabled) {
+	background-image: -webkit-linear-gradient(top, #ffffff 0%, #d5dde5 50%, #b79d83 100%);
+	background-image: linear-gradient(to bottom, #E88509 0%, #B96014 50%, #864707 100%);
+    border: 1px solid #FF8A00;
+}
+.right-column > .box > footer {
+	background-color: rgba(0, 0, 0, 0.4) !important;
+    transition: .2s;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 2px 2px 10px 10px;
+}
+.right-column > .box > footer:hover {
+	background-color: rgba(7, 125, 189, 0.4) !important;
+    border: 1px solid #d5dde5 !important;
+}
+footer#memberbox-footer {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    transition: .2s;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 2px 2px 2px 10px;
+}
+#clubs #memberbox-footer:hover {
+    background-color: rgba(7, 125, 189, 0.4) !important;
+    border: 1px solid #d5dde5 !important;
+    text-shadow: 0 0 0.5em rgba(255, 255, 255, 0.8) !important;
+}
+#clubs .club-members-playing {
+    background-color: rgba(7, 125, 189, 0.4) !important;
+    transition: .2s;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 2px !important;
+}
+a.club-members-playing:hover {
+    text-decoration: none !important;
+    background-color: rgba(7, 125, 189, 0.4) !important;
+    border: 1px solid #d5dde5 !important;
+}
+html:not(.is-touch) #serverbrowser .servers-list tbody .server-row.active .star.starred:after,
+html:not(.is-touch) #serverbrowser .servers-list tbody .server-row.active .star:hover:after {
+	color: rgba(255, 255, 255, 1) !important;
+}
+html:not(.is-touch) #serverbrowser .servers-list tbody .server-row.active .star:after {
+    color: rgba(255, 255, 255, 0.3);
+}
+#base-bf4-html #main-header .box-content {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+.suggestion {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+}
+#dialog-container>#dialog-1>footer>.popup-gameinvite-buttons>div>button.common-popup-close-button {
+	box-sizing: border-box;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.0980392) !important;
+    background: rgba(38, 40, 45, 0.8) !important;
+    border-width: 0.1px !important;
+    border-radius: 2px !important;
+    transition: 0.3s !important;
+    color: red !important;
+    text-shadow: black 0px 0px 3px;
+    box-shadow: none;
+}
+#dialog-container>#dialog-1>footer>.popup-gameinvite-buttons>div>button.common-popup-close-button:hover{
+	text-shadow: red 0px 0px 3px, black 1px 1px 0px;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgb(255, 0, 0) !important;
+}
+#bblog-code-editor-receipt {
+	background: rgb(113, 181, 26);
+}
+#bblog-sidebar .jspDrag {
+	border-radius: 0px;
+	background: #00f7ff;
+}
+.jspVerticalBar {
+	width: 6px;
+}
+.battlepacks_lineart.smallinv {
+    background-image: url(http://eaassets-a.akamaihd.net/bl-cdn/cdnprefix/16cf6063e02a7fbff8d40fc647fd245545b5b05c/public/profile/warsaw/gamedata/battlepacks_lineart/small.png);
+}
+#server-page-map-rotation td.active {
+    color: #0017FF;
+    box-shadow: 0 0 7px 0 #00f7ff;
+    z-index: 1;
+}
+.box-content > .expanded > .pull-right > button:nth-child(1){
+	color: #6EBB02 !important;
+    text-shadow: black 0px 0px 3px !important;
+    box-shadow: none !important;
+    background: rgba(38, 40, 45, 0.8) !important;
+}
+.box-content > .expanded > .pull-right > button:nth-child(1):hover{
+    border: 1px solid #6EBB02 !important;
+    text-shadow: #88FF00 0px 0px 3px !important;
+}
+.box-content > .expanded > .pull-right > button:nth-child(2){
+    color: red !important;
+    text-shadow: black 0px 0px 3px !important;
+    box-shadow: none !important;
+}
+.box-content > .expanded > .pull-right > button:nth-child(2):hover{
+    border: 1px solid #FF0000 !important;
+    text-shadow: red 0px 0px 3px, black 1px 1px 0px !important;
+}
+.box-content > .expanded > .pull-right > button:only-of-type {
+    color: red !important;
+    text-shadow: black 0px 0px 3px !important;
+    box-shadow: none !important;
+}
+.box-content > .expanded > .pull-right > button:only-of-type:hover{
+    border: 1px solid #FF0000 !important;
+    text-shadow: red 0px 0px 3px, black 1px 1px 0px !important;
+}
+.server-row.active .icon-servertype-2 {
+    background: url(http://eaassets-a.akamaihd.net/bl-cdn/cdnprefix/9b764b983931ba3a6435e21c2fd56eddc76b813a/public/serverguide/icon-rank-ranked.png) top left no-repeat;
+}
+.server-row.active .icon-servertype-1 {
+    background: url(http://eaassets-a.akamaihd.net/bl-cdn/cdnprefix/9b764b983931ba3a6435e21c2fd56eddc76b813a/public/serverguide/icon-rank-official.png) top left no-repeat;
+}
+.server-row.active .icon-servertype-4 {
+    background: url(http://eaassets-a.akamaihd.net/bl-cdn/cdnprefix/9b764b983931ba3a6435e21c2fd56eddc76b813a/public/serverguide/icon-rank-unranked.png) top left no-repeat;
+}
+.server-row.active .icon-servertype-8 {
+    background: url(http://eaassets-a.akamaihd.net/bl-cdn/cdnprefix/9b764b983931ba3a6435e21c2fd56eddc76b813a/public/serverguide/icon-rank-private.png) top left no-repeat;
+}
+#server-page-map-rotation > .jspScrollable > .jspContainer > .jspHorizontalBar{
+	z-index: 2;
+}
+#missions-create #rounds-select > div ul li a {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#missions-create #rounds-select > div ul li.active a {
+    background-color: transparent;
+}
+#missions-create #friend-select .friend-box {
+    background: rgba(0, 0, 0, 0.2);
+}
+#loadout #items-select-menu .items-select-item:not(.active) .item-text {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#battlereport-commander-scoreboard h3 {
+    background: rgba(0, 0, 0, 0.4);
+}
+#missions-create #mission-description, #missions-create #map-description, #missions-create #attempts-description {
+    background: rgba(0, 0, 0, 0.4);
+}
+#missions-create .subheader {
+    background: rgba(0, 0, 0, 0.4);
+}
+#base-header {
+    width: 1012px !important;
+    margin: 0 auto !important;
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%) !important;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%) !important;
+    background: rgba(0,0,0,0.9) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+#base-header-user-tools .tools .popover .popover-body .header-profile-dropdown .signout:hover {
+	background: rgba(0, 159, 255, 0.74);
+}
+#base-header-user-tools .tools .popover .popover-body .header-profile-dropdown .signout a {
+    color: #FFFFFF;
+}
+#server-page-map-rotation td p span {
+    color: #00f7ff;
+}
+#receipt-container {
+    z-index: 2 !important;
+}
+#base-header .game-bar .dropdown-bar .dropdown-menu > a, #base-header .game-bar .dropdown-bar .dropdown-menu div {
+    margin: 0px 0px 7px 10px;
+    border-radius: 5px;
+    transition-property: background;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+#geoleaderboard-container .standings tr.active a {
+    color: #00DAFF;
+}
+.popover .popover-body footer a:hover, .popover .popover-body .hover:hover {
+    background: rgba(0, 159, 255, 0.74);
+}
+#base-header-user-tools .tools .popover .popover-body {
+    color: #05C3FF;
+    background: black;
+    border: 1px solid #323438;
+}
+#missions-overview .challenge-element .info .challenge-info {
+    color: #808080;
+}
+.missions-details > .btn-small{
+    margin: -98px 0px 0px 0px;
+}
+#base-header .game-bar .dropdown-bar .recommended-servers > .server .recommend-reason {
+    color: #00AEE4;
+}
+#base-header .game-bar .dropdown-bar .recommended-servers > .server .details {
+    color: #9C9C9C;
+}
+#base-header>#community-bar {
+    background: url("https://imgur.com/tDdhAQx.png") no-repeat rgba(0,0,0,0.9) !important;
+}
+#dialog-container>.dialog>footer>.popup-gameinvite-buttons>.popup-gameinvite-accepted-button>a{
+	box-sizing: border-box;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.0980392) !important;
+    background: rgba(38, 40, 45, 0.8) !important;
+    border-width: 0.1px !important;
+    border-radius: 2px !important;
+    transition: 0.3s !important;
+    color: #6EBB02 !important;
+    text-shadow: black 0px 0px 3px;
+    box-shadow: none;
+}
+#dialog-container>.dialog>footer>.popup-gameinvite-buttons>.popup-gameinvite-accepted-button>a:hover{
+	text-shadow: rgb(136, 255, 0) 0px 0px 3px;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgb(110, 187, 2) !important;
+}
+#dialog-container>.dialog>footer>.popup-prompt-buttons>.common-popup-close-button{
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.0980392) !important;
+    background: rgba(38, 40, 45, 0.8) !important;
+    border-width: 0.1px !important;
+    border-radius: 2px !important;
+    transition: 0.3s !important;
+    color: red !important;
+    text-shadow: black 0px 0px 3px;
+    box-shadow: none;
+}
+#dialog-container>.dialog>footer>.popup-prompt-buttons>.common-popup-close-button:hover{
+	text-shadow: red 0px 0px 3px, black 1px 1px 0px;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgb(255, 0, 0) !important;
+}
+#dialog-container>.dialog>footer>.popup-prompt-buttons>.popup-prompt-button-continue{
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.0980392) !important;
+    background: rgba(38, 40, 45, 0.8) !important;
+    border-width: 0.1px !important;
+    border-radius: 2px !important;
+    transition: 0.3s !important;
+    color: #6EBB02 !important;
+    text-shadow: black 0px 0px 3px;
+    box-shadow: none;
+}
+#dialog-container>.dialog>footer>.popup-prompt-buttons>.popup-prompt-button-continue:hover{
+    text-shadow: rgb(136, 255, 0) 0px 0px 3px;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgb(110, 187, 2) !important;
+}
+.dialog ul.avatars li.selected {
+    background: #848484 !important;
+}
+#base-header .game-bar .main-nav .base-section-menu > li.active.has-dropdown:after {
+    border: 4px solid rgb(0, 0, 0);
+    border-top-color: rgba(255, 0, 0, 0);
+    border-left-color: rgba(255, 0, 0, 0);
+    opacity: 0.5;
+}
+#base-header .game-bar .main-nav .base-section-menu > li.has-dropdown:after {
+    opacity: 0.3;
+}
+.feed-comment-text-clicked {
+    max-width: 530px;
+}
+.feed-comment-text-not-clicked {
+    width: 527px;
+    max-width: 530px;
+}
+#comcenter-friends #comcenter-tab-friends-content li .join-friend {
+	-o-transition-property: border, border-radius;
+    -o-transition-duration: 0.2s;
+    -o-transition-timing-function: linear;
+	-moz-transition-property: border, border-radius;
+    -moz-transition-duration: 0.2s;
+    -moz-transition-timing-function: linear;
+	-webkit-transition-property: border, border-radius;
+    -webkit-transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+	transition-property: border, border-radius;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+	border: 1px solid #00A4FF;
+}
+#comcenter-friends #comcenter-tab-friends-content li .join-friend:hover {
+	border: 1px solid #00A4FF !important;
+	border-radius: 15px !important;
+}
+#comcenter-friends #comcenter-tab-friends-content li .join-friend:active {
+	background: transparent !important;
+	border-color: #FF7E00 !important;
+}
+#comcenter-tab-friends-content .btn.btn-small.join-friend-submit-link i, .comcenter-chat-content .btn.btn-small.join-friend-submit-link i {
+    display: block;
+    margin-top: 2px;
+    background: url(http://i.imgur.com/bBPdGcp.png) 0 -10px no-repeat;
+    background-repeat: no-repeat;
+    height: 10px;
+    width: 10px;
+}
+#comcenter-tab-friends-content .btn.btn-small.join-friend-submit-link:active i, .comcenter-chat-content .btn.btn-small.join-friend-submit-link:active i {
+    display: block;
+    margin-top: 2px;
+    background: url(http://i.imgur.com/bBPdGcp.png) 0 0px no-repeat;
+    background-repeat: no-repeat;
+    height: 10px;
+    width: 10px;
+}
+#comcenter-tab-friends-content, #comcenter-tab-chats, #comcenter-tab-search {
+    bottom: 48px !important;
+}
+section.main-header>div.get-bfh-tile {
+    display: none !important;
+}
+div.main-loggedin-middle>div.base-middle-content>div.row>div.main-side-column {
+    display: none !important;
+}
+div.main-loggedin-middle>div.base-middle-content>div.row>div.span8 {
+    width: 992px !important;
+}
+
+/* BATTLELOG LANDING PAGE TILE FIX START*/
+#base-bf4-html .main-header .tiles{
+	background: transparent !important;
+}
+#bottom-tiles > .tiles:first-child{
+	display: none;
+}
+#bottom-tiles > .tiles:nth-child(2){
+	height: 147px;
+}
+#bottom-tiles > .tiles:last-child > .premium{
+	display: none;
+}
+#bottom-tiles > .tiles:nth-child(2) > .challenges > .box{
+    position: relative;
+    top: -144px;
+	right: -336px;
+    width: 328px;
+}
+#bottom-tiles > .tiles:last-child > .battlepacks > .box{
+    position: relative;
+    right: -329px;
+}
+
+/* SERVERBROWSER RECOMMENDED REMOVE & SPACING FIX*/
+section#serverbrowser-recommended-servers{
+	display: none;
+}
+.main-header .tiles .box .box-hide h1 {
+    text-shadow: 2px 1px 10px #DC7616;
+}
+
+/*SERVERBROWSER INFO HIGHLIGHTER START*/
+.mode{
+    color: #9EBFCC !important;
+}
+.tick-rate{
+    color: #BF8FB4 !important;
+}
+#base-bf4-html .bblog-bf4-filter-btn {
+    background-color: #0017FF;
+}
+
+/*ASSIGNMENT TEXT COLOR CORRECTION START*/
+.box-content > ul > .clearfix > a > .completion-content > p{
+	color: darkgrey;
+}
+#overview-completion ul li .completion-content p.completed {
+    color: #57B06D;
+}
+#assignment-dependencies li span, #assignment-dependencies li a {
+    float: left;
+    margin: 4px 0 0 10px;
+    color: #57B06D;
+}
+#assignment-dependencies li.nottaken .assignment-link {
+    opacity: 0.2;
+}
+
+/*BBLOG BUTTON POSITION START*/
+#bblog-icon {
+    top: 10px !important;
+    transition: .2s;
+}
+#bblog-teamspeak {
+    top: 170px !important;
+    transition: .2s;
+}
+
+@media screen and (min-device-width: 2000px) {
+    ::-webkit-scrollbar {
+		width: 10px !important;
+	}
+	.ace_scrollbar-h {
+	height: 10px !important;
+	}
+	.jspVerticalBar {
+	width: 10px !important;
+	}
+}
+
+@media screen and (min-width: 1261px) {
+	html:not(.is-touch) body:not(.no-comcenter) #base-background {
+	    margin-left: 0px !important;
+	}
+	#serverbrowser-show button.btn-primary.bblog-red:hover, #server-page-join-buttons .bblog-red:hover {
+    border: 1px solid rgba(0, 247, 255, 0.5) !important;
+	text-shadow: 0 0 0.5em rgba(0, 247, 255, 0.8);
+	}
+}
